@@ -39,4 +39,42 @@
 
 // Every account has a persistent key-value store mapping 256-bit words to 256-bit words called storage.
 
+// Simple example
 
+// pragma solidity ^0.6.0;
+
+// contract Simplestorage {
+
+// uint storedData;
+
+// function set(uint x) public{
+//     storedData = x
+// }
+
+// function get() public view returns (uint){
+//     return storedData;
+// }
+
+// }
+
+// Sample contract
+
+pragma solidity ^0.6.0;
+
+contract Counter{
+
+uint count;
+
+constructor() public{
+    count = 0;
+}
+
+function getCount() public view returns (uint){
+    return count;
+}
+
+function incrementCount() public{
+    count++;
+}
+
+}
