@@ -13,7 +13,21 @@ pragma solidity ^0.6.0;
 contract MyContract{
     //state variable
 
-    uint public MyUint=3;
+    uint public myUint=3;
+    int public myInt=1;
+    string public myString = "Sai Teja";
+    uint256 public myUint256 = 1;
+    uint8 public myUint8= 1;
+    bytes32 public myBytes32 = "Sai Teja";
+    address public myAddress = 0x599489380950958w005wnvsn4909nsn;
+
+
+    struct Student{
+        uint myId;
+        string myName;
+        string myAddress;
+        bool true;
+    }
 
     //Local variable
 
